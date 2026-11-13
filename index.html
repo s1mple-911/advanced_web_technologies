@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Portal - Register</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>My Student Portal</h1>
+  <h2>Registration</h2>
+
+  <form id="regForm" novalidate>
+    <p>
+      <label for="fullName">Full name</label>
+      <input type="text" id="fullName" name="fullName">
+      <span id="nameLeft">25 characters left</span>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email">
+    </p>
+    <p>
+      <label for="phone">Phone (9 digits)</label>
+      <input type="text" id="phone" name="phone">
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password">
+    </p>
+    <p>
+      <label for="confirmPassword">Confirm password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword">
+    </p>
+    <p>
+      <label for="city">City</label>
+      <select id="city" name="city">
+        <option value="">Select city</option>
+        <option value="Tashkent">Tashkent</option>
+        <option value="Samarkand">Samarkand</option>
+        <option value="Bukhara">Bukhara</option>
+        <option value="Navoi">Navoi</option>
+        <option value="Andijan">Andijan</option>
+      </select>
+    </p>
+    <p id="cityLine"></p>
+
+    <ul id="errors"></ul>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
